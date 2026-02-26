@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+    <div class="app">
+        <h1>🌤️ Weather App</h1>
+
+        <input
+            id="cityInput"
+            type="text"
+            placeholder="Enter city name"
+        />
+
+        <div class="buttons">
+            <button onclick="getCurrentWeather()">Current</button>
+            <button onclick="getForecast()">Forecast</button>
+        </div>
+
+        <!-- Spinner -->
+        <div id="loader" class="loader hidden"></div>
+
+        <!-- Result -->
+        <div id="result" class="cards"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
